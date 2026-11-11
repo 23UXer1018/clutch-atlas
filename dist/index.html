@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101411">
+  <meta name="description" content="五道题，一张世界地图。定位 CS:GO、无畏契约和英雄联盟的电竞记忆。">
+  <title>CLUTCH ATLAS · 电竞地理</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101411'/%3E%3Cpath d='M16 25V16h9M39 16h9v9M48 39v9h-9M25 48h-9v-9M23 32h18M32 23v18' fill='none' stroke='%23d4f975' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/world-data.js"></script>
+  <script defer src="assets/questions.js"></script>
+  <script defer src="assets/core.js"></script>
+  <script defer src="assets/map.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <button class="brand" data-action="home" aria-label="电竞地理首页"><span class="brand-mark"><i></i></span><span>CLUTCH<span class="brand-light"> ATLAS</span><small>电竞地理</small></span></button>
+    <nav aria-label="主导航"><button class="nav-link active" data-action="home">游戏大厅</button><button class="nav-link" data-action="stats">我的战绩</button><button class="nav-link" data-action="rules">玩法说明 <span>↗</span></button></nav>
+    <span class="header-status"><i></i> 每天一场，世界主场</span>
+  </header>
+  <main id="app"></main>
+  <footer class="site-footer"><span>CLUTCH ATLAS <b>© 2026</b></span><span>为每一个记得名场面的你而做。</span><button data-action="about">关于与数据来源 ↗</button></footer>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
